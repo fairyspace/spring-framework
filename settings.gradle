@@ -7,7 +7,8 @@ pluginManagement {
 
 plugins {
 	id "com.gradle.enterprise" version "3.7.2"
-	id "io.spring.ge.conventions" version "0.0.7"
+	/*必须屏蔽掉，这个字面意思好像是什么公约，会去访问一个连接超时地址，会设置我的编译是17，而不是1.8*/
+	/*id "io.spring.ge.conventions" version "0.0.7"*/
 }
 
 include "spring-aop"
